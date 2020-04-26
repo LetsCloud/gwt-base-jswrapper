@@ -1,5 +1,8 @@
 # gwt-jswrapper
 Base GWT functions for wrapping external JavaScript codes.
+## Functions
+- Injecting JavaScript code.
+- Injecting CSS code.
 ## Maven
 ### Current Version 1.0.0
 ```xml
