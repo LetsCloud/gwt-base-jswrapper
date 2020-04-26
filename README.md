@@ -3,9 +3,12 @@ Base GWT functions for wrapping external JavaScript codes.
 ## Functions
 - Injecting JavaScript code.
 ```java
-GwtJsWrapper.injectJs(PopupClientBundle.INSTANCE.olPopupJs(), true, false);
+GwtJsWrapper.injectJs(TextResource resource, boolean removeTag, boolean sourceUrl);
 ```
 - Injecting CSS code.
+```java
+GwtJsWrapper.injectCss(TextResource resource);
+```
 ## Maven
 ### Current Version 1.0.0
 ```xml
