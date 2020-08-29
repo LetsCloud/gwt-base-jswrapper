@@ -7,14 +7,14 @@
 	<parent>
 		<artifactId>gwt-jswrapper-parent</artifactId>
 		<groupId>com.github.letscloud</groupId>
-		<version>1.0.0</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>gwt-jswrapper</artifactId>
 	<packaging>gwt-lib</packaging>
 
-	<name>GWT JavaScript Wrapper Base</name>
-	<description>GWT JavaScript Wrapper Base</description>
+	<name>gwt-jswrapper</name>
+	<description>GWT basic functions for wrapping external JavaScript code.</description>
 
 	<dependencies>
 		<!-- Gwt -->
@@ -50,27 +50,25 @@
 
 	<build>
 		<plugins>
+			<!-- ********************* -->
+			<!-- maven-compiler-plugin -->
+			<!-- ********************* -->
 			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>${surefire.version}</version>
-				<configuration>
-					<additionalClasspathElements>
-						<additionalClasspathElement>${project.build.sourceDirectory}</additionalClasspathElement>
-						<additionalClasspathElement>${project.build.testSourceDirectory}</additionalClasspathElement>
-					</additionalClasspathElements>
-					<useManifestOnlyJar>false</useManifestOnlyJar>
-					<forkMode>always</forkMode>
-					<argLine>-Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.NoOpLog</argLine>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>test</goal>
-						</goals>
-					</execution>
-				</executions>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
 
+			<!-- ********************* -->
+			<!-- versions-maven-plugin -->
+			<!-- ********************* -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- **************** -->
+			<!-- gwt-maven-plugin -->
+			<!-- **************** -->
 			<plugin>
 				<groupId>net.ltgt.gwt.maven</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
@@ -83,7 +81,6 @@
 					<sourceLevel>1.8</sourceLevel>
 					<jvmArgs>
 						<jvmArg>-Xmx1g</jvmArg>
-						<jvmArg>-Xms1g</jvmArg>
 						<jvmArg>-XX:CompileThreshold=7000</jvmArg>
 					</jvmArgs>
 					<optimize>9</optimize>
@@ -105,14 +102,20 @@
 				</executions>
 			</plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-
+			<!-- ******************* -->
+			<!-- maven-source-plugin -->
+			<!-- ******************* -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<!-- ******************** -->
+			<!-- maven-javadoc-plugin -->
+			<!-- ******************** -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
