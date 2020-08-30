@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   #%L
-  GwtMaterial
+  LetsCloud
   %%
-  Copyright (C) 2015 - 2020 GwtMaterialDesign
+  Copyright (C) 2020 LetsCloudTeam
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@
 	<inherits name="com.google.gwt.core.Core" />
 	<inherits name="com.google.gwt.resources.Resources" />
 
-	<source path="client" />
+	<source path="" />
 
 	<set-configuration-property
 		name="CssResource.conversionMode" value="strict" />

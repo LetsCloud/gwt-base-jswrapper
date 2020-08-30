@@ -1,8 +1,8 @@
 /*
  * #%L
- * GwtMaterial
+ * LetsCloud
  * %%
- * Copyright (C) 2015 - 2020 GwtMaterialDesign
+ * Copyright (C) 2020 LetsCloudTeam
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,10 +17,7 @@
  * limitations under the License.
  * #L%
  */
-/**
- * 
- */
-package gwt.jswrapper.client;
+package gwt.jswrapper;
 
 import java.util.ArrayList;
 import java.util.List;
