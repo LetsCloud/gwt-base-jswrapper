@@ -10,11 +10,11 @@ GwtJsWrapper.injectJs(TextResource resource, boolean removeTag, boolean sourceUr
 GwtJsWrapper.injectCss(TextResource resource);
 ```
 ## Maven
-### Current Version 1.0.0
+### Current Version: 0.0.3-SNAPSHOT
 ```xml
 <dependency>
     <groupId>com.github.letscloud</groupId>
     <artifactId>gwt-jswrapper</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.3-SNAPSHOT</version>
 </dependency>
 ```
