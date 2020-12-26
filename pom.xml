@@ -6,14 +6,14 @@
 
 	<groupId>com.github.letscloud</groupId>
 	<artifactId>gwt-jswrapper-parent</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
 		<module>gwt-jswrapper</module>
 	</modules>
 
-	<name>gwt-jswrapper</name>
+	<name>gwt-jswrapper-parent</name>
 	<description>GWT basic functions for wrapping external JavaScript code</description>
 	<url>https://letscloud.github.io/</url>
 
